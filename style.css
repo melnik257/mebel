@@ -52,6 +52,10 @@ body {
 .hero-content {
     margin-top: 150px;
     max-width: 1200px;
+     margin-left: auto;    
+    margin-right: auto;  
+    width: 100%;
+    padding: 0 15px;      
 }
 
 .hero-content h1 {
