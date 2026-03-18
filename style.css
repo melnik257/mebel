@@ -1,12 +1,13 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif; /* Вместо Arial */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .center {
-    max-width: 1200px; 
-    margin: 0 auto;   
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 15px;
+    width: 100%;
 }
 
 .header {
@@ -40,20 +41,25 @@ body {
 
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                      url('ping/Rectangle 15.jpg'); 
+                      url('ping/Rectangle 15.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     color: white;
+}
+
+.hero .center {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    width: 100%;          
 }
 
 .hero-content {
-    margin-top: 150px;
-   width: 100%;   
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
 }
 
 .hero-content h1 {
@@ -74,7 +80,7 @@ body {
 }
 
 .products {
-    padding: 80px 0; /* Уменьшил отступ с 300px для адекватного вида */
+    padding: 80px 0;
     background-color: #ffffff;
 }
 
@@ -114,14 +120,10 @@ body {
     font-size: 1.2em;
 }
 
-/* Исправленный футер под макет (светлый фон, темный текст) */
 .footer {
-    background-color: #dcdcdc; 
-    color: #333333; 
+    background-color: #dcdcdc;
+    color: #333333;
     padding: 30px 0;
     text-align: center;
     font-size: 16px;
-}
-.hero .center {
-    width: 100%;
 }
